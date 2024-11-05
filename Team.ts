@@ -18,6 +18,7 @@ class Team {
         this.coach = new Coach();
         this.director = new Director();
         this.generateRandomPlayers();
+        this.players = [];
     }
 
 }
