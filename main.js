@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl: '.',
+    baseUrl: './dist',
     waitSeconds: 20,
 
     deps: ['Game'],
