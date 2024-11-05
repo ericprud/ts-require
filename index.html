@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head><title>TypeScript Game</title></head>
-<body>
-<script src="require.js" data-main="main.js"></script>
-</body>
-<button class="play" value="play" onclick="play();">play</button>
+  <head><title>TypeScript Game 1</title></head>
+  <body>
+    <script src="require.js" data-main="main.js"></script>
+  </body>
+  <button class="play" value="play" onclick="play();">play</button>
 
-<script>
+  <script>
+console.log("HERE");
+  require(['Game'], function (Game) {
+    var game = new Game();
+    console.log("ASDF", game.toString());
+  });
     function play() {
-        require(['Game'], function (Game) {
-            var game = new Game();
-            console.log(game.toString());
-        });
+      require(['Game'], function (Game) {
+        debugger;
+        var game = new Game();
+        console.log(game.toString());
+      });
     }
 
-</script>
+  </script>
 
 </html>

@@ -7,7 +7,7 @@ class Team {
     name: string;
     coach:Coach;
     director:Director;
-    players:[Player];
+    players:Array<Player>;
 
     generateRandomPlayers() {
         this.players = [new Player(), new Player(), new Player(), new Player(), new Player(), new Player(), new Player(), new Player(), new Player(), new Player(), new Player()];
